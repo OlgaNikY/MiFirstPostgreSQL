@@ -1,18 +1,4 @@
-select c.name, c2.name
-from companies c 
-join cities c2  
-on c.citi_id = c2.id 
-where c.labors >1000;
-
-SELECT c2.name, COUNT(*) AS count
-FROM companies c
-join cities c2  
-on c.citi_id = c2.id where c.labors >1000
-GROUP BY c.citi_id, c2.id;
-
-select c3.name, c4.name, c4.count
-from countries c3
-join   (SELECT c2.id, c2.name, COUNT(*) AS count, c2.country_id 
+join   (SELECT c2.id, c2.name, COUNT(c.citi_id) AS count, c2.country_id 
 FROM companies c
 join cities c2  
 on c.citi_id = c2.id where c.labors >1000
