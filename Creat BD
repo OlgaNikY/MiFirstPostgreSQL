@@ -35,3 +35,6 @@ insert into Companies  values (1,'ОГУ',2,10000000,1000);
 insert into Companies  values (2,'газпром Оренбург',2,200000000,20000);
 insert into Companies  values (3,'газпром СПБ',3,300000000,30000);
 select * from Companies;
+insert into Cities values (5,'Нью-йорк',8419000,1624,2);
+insert into Cities values (6,'Лас-Вегас',634773,1905,2);
+insert into Cities values (7,'Чикаго',2700000,1833,2);
